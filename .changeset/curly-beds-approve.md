@@ -1,5 +1,0 @@
----
-"@developsergiotomas/stack": patch
----
-
-tetste
