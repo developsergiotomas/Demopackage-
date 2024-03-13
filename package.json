@@ -7,7 +7,10 @@
     "index.js"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+    "init-changesert": "changeset init",
+    "commit": "changeset",
+    "publish": "changeset version && changeset publish"
   },
   "repository": {
     "type": "git",

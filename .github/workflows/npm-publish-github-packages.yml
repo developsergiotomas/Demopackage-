@@ -31,7 +31,13 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           scope: "@developsergiotomas"
-      - run: npm ci
-      - run: npm publish
+
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # This expects you to have a script called release which does a build for your packages and calls changeset publish
+          publish: pnpm publish-packages
         env:
+          GIT_HUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
