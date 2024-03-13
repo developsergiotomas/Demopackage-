@@ -9,6 +9,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\""
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/developsergiotomas/Demopackage.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
